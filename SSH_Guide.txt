@@ -1,0 +1,21 @@
+SOME USEFUL COMMANDS FOR THE GIT SSH KEY WORKING
+
+
+Command for generating ssh in Linux
+
+ ssh-keygen -t rsa -b 4096 -C "yourmail"gmail.com"
+
+checking if it's exist or not 
+ ls -al ~/.ssh
+
+
+Activating the ssh agent
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_rsa
+
+Checking Public key
+    cat ~/.ssh/id_rsa.pub
+
+Connecting
+    ssh -T git@github.com
+
